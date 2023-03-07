@@ -2,7 +2,7 @@ import React from "react";
 
 function GalleryImg({ image }) {
   return (
-    <div className="">
+    <div className="w-full">
       <img className="rounded-xl" src={image} alt="" />
     </div>
   );

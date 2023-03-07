@@ -8,7 +8,7 @@ import Vision from "./Components/Vision";
 
 function App() {
   return (
-    <div className="bg-[#3d3c70] text-[#f0f0ff] pt-[8px]">
+    <div className="bg-[#3d3c70] text-[#f0f0ff] pt-[8px] pb-[300px] ">
       <HeroPage />
       <Info />
       <Vision />

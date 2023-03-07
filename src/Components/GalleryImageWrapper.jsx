@@ -67,13 +67,24 @@ function GalleryImageWrapper() {
   ];
   return (
     <div>
-      <Swiper className="pb-[40px]"
-        slidesPerView={5.3}
-        spaceBetween={25}
+      <Swiper
+        className="pb-[40px]"
+        slidesPerView={1.6}
+        spaceBetween={15}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination, Navigation]}
+        breakpoints={{
+          700: {
+            slidesPerView: 2.3,
+            spaceBetween: 15,
+          },
+          1000: {
+            slidesPerView: 2.7,
+            spaceBetween: 15,
+          },
+        }}
       >
         {images.map((image, index) => (
           <SwiperSlide>
