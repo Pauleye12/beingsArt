@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import VisionCardWrapper from "./visionCardWrapper";
 
 function Vision() {
   return (
-    <div>Vision</div>
-  )
+    <div className=" my-[200px]">
+      <VisionCardWrapper />
+    </div>
+  );
 }
 
-export default Vision
+export default Vision;
