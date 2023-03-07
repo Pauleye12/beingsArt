@@ -3,7 +3,7 @@ import { UilTwitter } from "@iconscout/react-unicons";
 
 function Footer() {
   return (
-    <div className=" mt-[200px] flex flex-col justify-center items-center">
+    <div className=" mt-[200px] flex flex-col justify-center items-center ">
       <div className="footer_img w-[400px]">
         <img src="./Beings Web Assets/BEINGS-LOGO.png" alt="" />
       </div>
