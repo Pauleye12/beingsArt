@@ -1,12 +1,23 @@
 import React from "react";
-import { UilTwitter } from "@iconscout/react-unicons";
+import { motion } from "framer-motion";
 
 function Footer() {
+  const footer_logoVariant = {
+    inView: {
+      scale: [1, 1.2, 1],
+      transition: {
+        duration: 0.7,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay: .3,
+      },
+    },
+  };
   return (
     <div className=" mt-[200px] flex flex-col justify-center items-center px-[30px] ">
-      <div className="footer_img max-w-[400px] w-full">
+      <motion.div variants={footer_logoVariant} whileInView='inView' className="footer_img max-w-[400px] w-full">
         <img src="./Beings Web Assets/BEINGS-LOGO.png" alt="" />
-      </div>
+      </motion.div>
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center font-[700] text-[#f0f0ff] text-[30px] md:text-[55px] max-w-[700px] w-full leading-[40px] md:leading-[60px]">
           Join The Beings Community

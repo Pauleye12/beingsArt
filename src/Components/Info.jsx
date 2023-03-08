@@ -5,9 +5,9 @@ function Info() {
  
 
   return (
-    <div className="info_container pt-[40px] px-[30px] bg-[#3d3c70]">
+    <div className="info_container pt-[40px] px-[30px] bg-[#3d3c70] rounded-t-3xl">
       <div className="info_wrapper">
-        <div className="flex flex-col justify-start items-center"> 
+        <div className="flex flex-col justify-start items-center">
           <h1 className="text-center font-[700] text-[#f0f0ff] text-[40px] md:text-[55px] mb-[20px] ">
             Bringing color back to the DOT
           </h1>

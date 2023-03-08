@@ -8,12 +8,17 @@ import Vision from "./Components/Vision";
 
 function App() {
   return (
-    <div className="bg-[#3d3c70] text-[#f0f0ff] pt-[8px] pb-[300px] ">
-      <HeroPage />
-      <Info />
-      <Vision />
-      <Roadmap />
-      <Footer/>
+    <div className="bg-[#3d3c70] text-[#f0f0ff] pb-[200px] md:pb-[10px] ">
+      <div className="sticky top-0 z-[10]">
+        <HeroPage />
+      </div>
+
+      <div className="bg-[#3d3c70] relative z-[100] rounded-t-3xl w-full border-[3px] border-[#3d3c70] ">
+        <Info />
+        <Vision />
+        <Roadmap />
+        <Footer />
+      </div>
     </div>
   );
 }

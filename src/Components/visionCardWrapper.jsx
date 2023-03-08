@@ -41,7 +41,7 @@ function VisionCardWrapper() {
   ];
 
   return (
-    <div className=" flex items-center justify-center flex-col gap-[20px]">
+    <div className=" flex items-center justify-center flex-col gap-[40px] ">
       {details.map((content, index) => (
         <Vision_cards key={index} content={content} />
       ))}
