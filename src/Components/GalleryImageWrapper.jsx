@@ -76,12 +76,22 @@ function GalleryImageWrapper() {
         }}
         modules={[Pagination, Navigation]}
         breakpoints={{
+          500: {
+            slidesPerView: 2.1,
+            spaceBetween: 15,
+          },
           700: {
             slidesPerView: 2.3,
             spaceBetween: 15,
           },
-          1000: {
+
+          900: {
             slidesPerView: 2.7,
+            spaceBetween: 15,
+          },
+
+          1200: {
+            slidesPerView: 4.7,
             spaceBetween: 15,
           },
         }}

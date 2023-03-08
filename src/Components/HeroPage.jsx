@@ -13,7 +13,7 @@ function HeroPage() {
       scale: 1,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 2,
         delay: .2,
         ease: "easeInOut",
         type: "spring",
@@ -32,7 +32,7 @@ function HeroPage() {
       opacity: 1,
       transition: {
         delay: 1.1,
-        duration: 1,
+        duration: 1.5,
         ease: "easeInOut",
         type: "spring",
         bounce: 0.5,
