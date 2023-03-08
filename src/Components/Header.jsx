@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from "react";
 import { UilBars } from "@iconscout/react-unicons";
-import SideBar from './SideBar';
+import SideBar from "./SideBar";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
+  const [sideBarOpen, setSideBarOpen] = useState(false);
+
+  const SideBarToggle = () => setSideBarOpen((prev) => !prev);
+
   return (
     <div className=" nav_container min-h-[70px] w-full flex justify-start items-center text-[white] ">
       <div className="h-full  w-full flex justify-between items-center gap-[] ">
@@ -18,7 +23,6 @@ function Header() {
             <li>Home</li>
             <li>About</li>
             <li>Vision</li>
-            
           </ul>
         </div>
         <a
@@ -29,13 +33,14 @@ function Header() {
         >
           Academy
         </a>
-        <div className='md:hidden'>
-          <UilBars size='40'/>
+        <div className="md:hidden" onClick={SideBarToggle}>
+          <UilBars size="40" />
         </div>
       </div>
-      <SideBar/>
+
+      <AnimatePresence>{sideBarOpen && <SideBar />}</AnimatePresence>
     </div>
   );
 }
 
-export default Header
+export default Header;

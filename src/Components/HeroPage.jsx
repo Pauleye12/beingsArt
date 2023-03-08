@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 
 function HeroPage() {
+
+   
+
   return (
     <div className="hero_section_container flex flex-col justify-center items-center px-[30px] pb-[20px] gap-[40px] ">
-      <div className="nav_bar w-full  z-[1000] relative">
+      <div className="nav_bar w-full  z-[1000] ">
         <Header />
       </div>
       <div className="home_page flex flex-col justify-center items-center gap-[40px] ">

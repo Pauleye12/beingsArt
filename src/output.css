@@ -520,16 +520,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
-}
-
-.relative {
-  position: relative;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .left-0 {
@@ -540,16 +536,16 @@ video {
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.z-\[-100\] {
+  z-index: -100;
+}
+
 .z-\[1000\] {
   z-index: 1000;
-}
-
-.z-\[999\] {
-  z-index: 999;
-}
-
-.z-\[100\] {
-  z-index: 100;
 }
 
 .my-\[200px\] {
@@ -592,6 +588,10 @@ video {
 
 .mt-\[45px\] {
   margin-top: 45px;
+}
+
+.mt-\[74px\] {
+  margin-top: 74px;
 }
 
 .flex {
@@ -682,6 +682,10 @@ video {
   gap: 15px;
 }
 
+.gap-\[17px\] {
+  gap: 17px;
+}
+
 .gap-\[20px\] {
   gap: 20px;
 }
@@ -769,10 +773,6 @@ video {
   background-color: rgb(197 198 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
 .p-\[10px\] {
   padding: 10px;
 }
@@ -820,6 +820,10 @@ video {
   padding-bottom: 20px;
 }
 
+.pb-\[25px\] {
+  padding-bottom: 25px;
+}
+
 .pb-\[300px\] {
   padding-bottom: 300px;
 }
@@ -828,28 +832,16 @@ video {
   padding-bottom: 40px;
 }
 
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
 .pt-\[40px\] {
   padding-top: 40px;
 }
 
 .pt-\[8px\] {
   padding-top: 8px;
-}
-
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[75px\] {
-  padding-top: 75px;
-}
-
-.pt-\[70px\] {
-  padding-top: 70px;
-}
-
-.pt-\[74px\] {
-  padding-top: 74px;
 }
 
 .text-center {
@@ -907,6 +899,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .hero_section_container {
   background-image: linear-gradient(to bottom, #3d3c70f5, #3d3c70f5),
     url("../public/Beings Web Assets/banner_casas7.jpg");
@@ -953,10 +953,6 @@ video {
     display: none;
   }
 
-  .md\:w-\[100px\] {
-    width: 100px;
-  }
-
   .md\:w-\[120px\] {
     width: 120px;
   }
@@ -979,22 +975,6 @@ video {
 
   .md\:gap-\[30px\] {
     gap: 30px;
-  }
-
-  .md\:gap-0 {
-    gap: 0px;
-  }
-
-  .md\:gap-\[\] {
-    gap: ;
-  }
-
-  .md\:gap-\[25\] {
-    gap: 25;
-  }
-
-  .md\:gap-\[25px\] {
-    gap: 25px;
   }
 
   .md\:gap-\[35px\] {

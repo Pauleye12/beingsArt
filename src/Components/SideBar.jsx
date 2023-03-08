@@ -1,10 +1,38 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
 function SideBar() {
+  const SideBarVariant = {
+    hidden: {
+      y: "-100%",
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeInOut",
+        type: "spring",
+        bounce: 0.3,
+      },
+    },
+    exit: {
+      y: "-100%",
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+        type: "spring",
+        bounce: 0.3,
+      },
+    },
+  };
+
   return (
-    <div className="bg-[#3d3c70] fixed top-0 pt-[74px] right-0 left-0 w-screen flex justify-center items-center z-[100] ">
+    <motion.div variants={SideBarVariant} initial='hidden' animate='visible' exit='exit' className="bg-[#3d3c70] fixed top-0 mt-[74px] right-0 left-0 w-screen flex justify-center items-center z-[-100] pt-[10px] pb-[25px]">
       <div>
-        <ul className="nav_links font-bold flex justify-center items-center flex-col">
+        <ul className="nav_links font-bold flex justify-center items-center gap-[17px] flex-col">
           <li>
             <a href="">Home</a>
           </li>
@@ -19,8 +47,8 @@ function SideBar() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
-export default SideBar
+export default SideBar;
