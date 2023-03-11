@@ -4,6 +4,18 @@ import SideBar from "./SideBar";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
+  const footer_logoVariant = {
+    inView: {
+      scale: [1, 1.2, 1],
+      transition: {
+        duration: 1.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay: -0.3,
+      },
+    },
+  };
+
   const [sideBarOpen, setSideBarOpen] = useState(false);
 
   const SideBarToggle = () => setSideBarOpen((prev) => !prev);
@@ -11,18 +23,29 @@ function Header() {
   return (
     <div className=" nav_container min-h-[70px] w-full flex justify-start items-center text-[white] ">
       <div className="h-full  w-full flex justify-between items-center gap-[] ">
-        <div className=" logo_wrapper w-[70px]">
+        <motion.div
+          variants={footer_logoVariant}
+          whileInView="inView"
+          className=" logo_wrapper w-[70px]"
+        >
           <img
             className=""
             src=" ./Beings Web Assets/BEINGS-LOGO.png "
             alt=""
           />
-        </div>
-        <div className=" hidden md:block nav_links font-bold">
-          <ul className="flex gap-[20px]">
-            <li>Home</li>
-            <li>About</li>
-            <li>Vision</li>
+        </motion.div>
+        <div className=" hidden md:block nav_links font-[700] text-[20px]">
+          <ul className="flex gap-[30px]">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#About">
+              {" "}
+              <li>About</li>
+            </a>
+            <a href="#Vision">
+              <li>Vision</li>
+            </a>
           </ul>
         </div>
         <a

@@ -10,7 +10,9 @@
     box-sizing: border-box;
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .hero_section_container {
   background-image: linear-gradient(to bottom, #3d3c70f5, #3d3c70f5),
     url("../public/Beings Web Assets/banner_casas7.jpg");

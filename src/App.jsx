@@ -13,7 +13,7 @@ function App() {
         <HeroPage />
       </div>
 
-      <div className="bg-[#3d3c70] relative z-[100] rounded-t-3xl w-full border-[3px] border-[#3d3c70] ">
+      <div className="bg-[#3d3c70] relative z-[1000] rounded-t-3xl w-full border-t-[3px] border-[#3d3c70] ">
         <Info />
         <Vision />
         <Roadmap />

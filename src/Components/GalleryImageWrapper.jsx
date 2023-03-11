@@ -14,27 +14,15 @@ function GalleryImageWrapper() {
   const images = [
     {
       imageId: Date.now,
-      url: "./Beings Web Assets/1 (1).png",
-    },
-    {
-      imageId: Date.now,
-      url: "./Beings Web Assets/1.png",
-    },
-    {
-      imageId: Date.now,
-      url: "./Beings Web Assets/4.png",
-    },
-    {
-      imageId: Date.now,
-      url: "./Beings Web Assets/5.png",
-    },
-    {
-      imageId: Date.now,
       url: "./Beings Web Assets/96.png",
     },
     {
       imageId: Date.now,
-      url: "./Beings Web Assets/24.png",
+      url: "./Beings Web Assets/123.png",
+    },
+    {
+      imageId: Date.now,
+      url: "./Beings Web Assets/144.png",
     },
     {
       imageId: Date.now,
@@ -42,19 +30,27 @@ function GalleryImageWrapper() {
     },
     {
       imageId: Date.now,
+      url: "./Beings Web Assets/93.png",
+    },
+    {
+      imageId: Date.now,
+      url: "./Beings Web Assets/126.png",
+    },
+    {
+      imageId: Date.now,
+      url: "./Beings Web Assets/23.png",
+    },
+    {
+      imageId: Date.now,
       url: "./Beings Web Assets/17.png",
     },
     {
       imageId: Date.now,
-      url: "./Beings Web Assets/21.png",
+      url: "./Beings Web Assets/1.png",
     },
     {
       imageId: Date.now,
-      url: "./Beings Web Assets/Piere dome legendary being.png",
-    },
-    {
-      imageId: Date.now,
-      url: "./Beings Web Assets/Obamadon.jpg",
+      url: "./Beings Web Assets/12 (1).png",
     },
     {
       imageId: Date.now,
@@ -62,7 +58,15 @@ function GalleryImageWrapper() {
     },
     {
       imageId: Date.now,
-      url: "./Beings Web Assets/ABRO.png",
+      url: "./Beings Web Assets/4.png",
+    },
+    {
+      imageId: Date.now,
+      url: "./Beings Web Assets/21.png",
+    },
+    {
+      imageId: Date.now,
+      url: "./Beings Web Assets/10 (1).png",
     },
   ];
   return (

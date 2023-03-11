@@ -2,7 +2,10 @@ import React from 'react'
 
 function Roadmap() {
   return (
-    <div className="mt-[100px] flex flex-col gap-[50px] justify-center items-center px-[20px] ">
+    <div
+      id="Roadmap"
+      className="mt-[100px] bg-[#3d3c70] flex flex-col gap-[50px] justify-center items-center px-[20px] relative z-[1000] "
+    >
       <h1 className=" text-center font-[700] text-[#f0f0ff] text-[40px] md:text-[55px]">
         Roadmap
       </h1>

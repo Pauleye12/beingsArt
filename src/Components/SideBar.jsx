@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function SideBar() {
   const SideBarVariant = {
     hidden: {
-      y: "-100%",
+      y: "-15%",
       opacity: 0,
     },
     visible: {
@@ -18,7 +18,7 @@ function SideBar() {
       },
     },
     exit: {
-      y: "-100%",
+      y: "-15%",
       opacity: 0,
       transition: {
         duration: 0.5,
@@ -32,7 +32,7 @@ function SideBar() {
   return (
     <motion.div variants={SideBarVariant} initial='hidden' animate='visible' exit='exit' className="bg-[#3d3c70] fixed top-0 mt-[74px] right-0 left-0 w-screen flex justify-center items-center z-[-100] pt-[10px] pb-[25px]">
       <div>
-        <ul className="nav_links font-bold flex justify-center items-center gap-[17px] flex-col">
+        <ul className="nav_links font-bold flex justify-center items-center gap-[25px] flex-col">
           <li>
             <a href="">Home</a>
           </li>

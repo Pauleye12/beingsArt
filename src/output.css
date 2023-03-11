@@ -548,40 +548,16 @@ video {
   top: 0px;
 }
 
-.top-\[200px\] {
-  top: 200px;
-}
-
-.top-\[100p1\] {
-  top: 100p1;
-}
-
-.top-\[100px\] {
-  top: 100px;
-}
-
-.top-\[0px\] {
-  top: 0px;
-}
-
-.top-\[20px\] {
-  top: 20px;
-}
-
-.top-\[30px\] {
-  top: 30px;
-}
-
-.top-\[50px\] {
-  top: 50px;
+.top-\[70px\] {
+  top: 70px;
 }
 
 .z-\[-100\] {
   z-index: -100;
 }
 
-.z-\[100\] {
-  z-index: 100;
+.z-\[1000\] {
+  z-index: 1000;
 }
 
 .z-\[10\] {
@@ -658,10 +634,6 @@ video {
   width: 70px;
 }
 
-.w-\[75px\] {
-  width: 75px;
-}
-
 .w-\[90\%\] {
   width: 90%;
 }
@@ -718,16 +690,24 @@ video {
   justify-content: space-between;
 }
 
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .gap-\[15px\] {
   gap: 15px;
 }
 
-.gap-\[17px\] {
-  gap: 17px;
-}
-
 .gap-\[20px\] {
   gap: 20px;
+}
+
+.gap-\[25px\] {
+  gap: 25px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .gap-\[40px\] {
@@ -738,12 +718,16 @@ video {
   gap: 50px;
 }
 
-.gap-\[\] {
-  gap: ;
+.gap-\[600px\] {
+  gap: 600px;
 }
 
-.gap-\[30px\] {
-  gap: 30px;
+.gap-\[8px\] {
+  gap: 8px;
+}
+
+.gap-\[\] {
+  gap: ;
 }
 
 .rounded-2xl {
@@ -787,9 +771,8 @@ video {
   border-width: 5px;
 }
 
-.border-\[\#3d3c70\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(61 60 112 / var(--tw-border-opacity));
+.border-t-\[3px\] {
+  border-top-width: 3px;
 }
 
 .border-\[\#5a5992\] {
@@ -817,6 +800,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#3d3c70\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(61 60 112 / var(--tw-border-opacity));
+}
+
 .bg-\[\#3d3c70\] {
   --tw-bg-opacity: 1;
   background-color: rgb(61 60 112 / var(--tw-bg-opacity));
@@ -827,12 +815,22 @@ video {
   background-color: rgb(197 198 255 / var(--tw-bg-opacity));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-\[10px\] {
   padding: 10px;
 }
 
 .p-\[17px\] {
   padding: 17px;
+}
+
+.px-\[0px\] {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-\[17px\] {
@@ -850,24 +848,18 @@ video {
   padding-right: 30px;
 }
 
-.px-\[50px\] {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.py-\[17px\] {
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
-
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.pb-\[200px\] {
+  padding-bottom: 200px;
 }
 
 .pb-\[20px\] {
@@ -876,10 +868,6 @@ video {
 
 .pb-\[25px\] {
   padding-bottom: 25px;
-}
-
-.pb-\[300px\] {
-  padding-bottom: 300px;
 }
 
 .pb-\[40px\] {
@@ -894,16 +882,16 @@ video {
   padding-top: 40px;
 }
 
-.pb-\[200px\] {
-  padding-bottom: 200px;
-}
-
 .text-center {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[30px\] {
@@ -916,6 +904,10 @@ video {
 
 .text-\[43px\] {
   font-size: 43px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .font-\[500\] {
@@ -961,6 +953,10 @@ video {
   transition-duration: 150ms;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .hero_section_container {
   background-image: linear-gradient(to bottom, #3d3c70f5, #3d3c70f5),
     url("../public/Beings Web Assets/banner_casas7.jpg");
@@ -994,6 +990,20 @@ video {
   background-image: linear-gradient(257deg, #e674e5 20%, #4f4e8e);
 }
 
+@media (min-width: 640px) {
+  .sm\:mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:gap-\[30px\] {
+    gap: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mt-0 {
     margin-top: 0px;
@@ -1005,10 +1015,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:w-\[120px\] {
-    width: 120px;
   }
 
   .md\:w-\[46\%\] {
@@ -1027,10 +1033,6 @@ video {
     flex-direction: row;
   }
 
-  .md\:gap-\[30px\] {
-    gap: 30px;
-  }
-
   .md\:gap-\[35px\] {
     gap: 35px;
   }
@@ -1039,16 +1041,12 @@ video {
     border-left-width: 3px;
   }
 
-  .md\:pl-\[50px\] {
-    padding-left: 50px;
-  }
-
-  .md\:pb-\[\] {
-    padding-bottom: ;
-  }
-
   .md\:pb-\[10px\] {
     padding-bottom: 10px;
+  }
+
+  .md\:pl-\[50px\] {
+    padding-left: 50px;
   }
 
   .md\:text-left {
@@ -1061,6 +1059,10 @@ video {
 
   .md\:text-\[55px\] {
     font-size: 55px;
+  }
+
+  .md\:text-\[75px\] {
+    font-size: 75px;
   }
 
   .md\:leading-\[60px\] {

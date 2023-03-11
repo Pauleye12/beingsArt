@@ -5,13 +5,16 @@ function Info() {
  
 
   return (
-    <div className="info_container pt-[40px] px-[30px] bg-[#3d3c70] rounded-t-3xl">
+    <div
+      id="About"
+      className="info_container pt-[40px] px-[30px] bg-[#3d3c70] relative z-[1000]"
+    >
       <div className="info_wrapper">
         <div className="flex flex-col justify-start items-center">
-          <h1 className="text-center font-[700] text-[#f0f0ff] text-[40px] md:text-[60px] mb-[20px] ">
-            Bringing color back to the DOT
+          <h1 className="text-center font-[700] text-[#f0f0ff] text-[50px] md:text-[75px] mb-[20px] ">
+            "Bringing color back to the DOT"
           </h1>
-          <p className="my-[20px] md:text-center text-justify max-w-[900px] font-[500] w-full">
+          <p className="my-[20px] md:text-center  max-w-[900px] font-[500] w-full">
             {" "}
             Beings is a 5615 NFT collection on the Ethereum blockchain dedicated
             to building a community-focused platform that prioritizes providing
@@ -24,7 +27,7 @@ function Info() {
             progression.
           </p>
         </div>
-        <div className="mt-[30px] px-[50px]">
+        <div className="mt-[30px] px-[0px]">
           <GalleryImageWrapper />
         </div>
       </div>
