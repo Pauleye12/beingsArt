@@ -4,8 +4,8 @@ import twitter1 from "../../public/Beings Web Assets/twitter1.svg";
 
 function Footer() {
   return (
-    <div className="bg-[#3d3c70] mt-[200px] sm:mb-[50px] flex flex-col justify-center items-center gap-[10px] px-[30px] relative z-[1000] ">
-      <div className=" flex justify-center items-center footer_img max-w-[400px] w-full">
+    <div className="bg-[#3d3c70] mt-[150px] pb-[50px]  sm:pb-[150px] flex flex-col justify-center items-center gap-[10px] px-[30px] relative z-[1000] ">
+      <div className=" flex justify-center items-center footer_img max-w-[130px] w-full">
         <img
           className=" object-cover w-full"
           src="./Beings Web Assets/beings_11.png"
@@ -24,9 +24,9 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className=""
-              width="60"
-              height="60"
+              className="sm:w-[60px] sm:h-[60px]"
+              width="30"
+              height="30"
               viewBox="0 0 61 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -44,9 +44,9 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className=""
-              width="60"
-              height="60"
+              className="sm:w-[60px] sm:h-[60px]"
+              width="30"
+              height="30"
               viewBox="0 0 80 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +64,9 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className=""
-              width="60"
-              height="60"
+              className="sm:w-[60px] sm:h-[60px]"
+              width="30"
+              height="30"
               viewBox="0 0 60 60"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
