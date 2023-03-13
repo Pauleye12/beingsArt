@@ -1,8 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-import twitter1 from "../../public/Beings Web Assets/twitter1.svg";
+
 
 function Footer() {
+
+  const btnVariants = {
+    hover: {
+      scale: 1.1,
+      boxShadow: "0px 0px 8px rgba(254, 254, 254, 0.8)",
+      transition: {
+        ease: "easeInOut",
+        duration: 0.3,
+      },
+    },
+  };
   return (
     <div className="bg-[#3d3c70] mt-[150px] pb-[50px]  sm:pb-[150px] flex flex-col justify-center items-center gap-[10px] px-[30px] relative z-[1000] ">
       <div className=" flex justify-center items-center footer_img max-w-[130px] w-full">
@@ -12,14 +23,14 @@ function Footer() {
           alt=""
         />
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center relative">
         <h1 className="text-center font-[700] text-[#f0f0ff] text-[30px] md:text-[55px] max-w-[700px] w-full leading-[40px] md:leading-[60px]">
           Join The Beings Community
         </h1>
         <div className="social_btns flex justify-center items-center gap-[15px] md:gap-[35px] mt-[45px]">
-          <a
+          <motion.a variants={btnVariants} whileHover='hover'
             className="flex flex-col justify-center items-center bg-[#c5c6ff] border-[4px] border-[#5a5992] rounded-[50%] p-[10px]"
-            href="http://"
+            href="https://twitter.com/Beings_Official"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,10 +47,10 @@ function Footer() {
                 fill="#1D9BF0"
               />
             </svg>
-          </a>
-          <a
+          </motion.a>
+          <motion.a variants={btnVariants} whileHover='hover'
             className="flex flex-col justify-center items-center bg-[#c5c6ff] border-[4px] border-[#5a5992] rounded-[50%] p-[10px]  "
-            href="http://"
+            href="https://discord.gg/JYT3AZps5k"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,10 +67,10 @@ function Footer() {
                 fill="#5865F2"
               />
             </svg>
-          </a>
-          <a
+          </motion.a>
+          <motion.a variants={btnVariants} whileHover='hover'
             className="flex flex-col justify-center items-center bg-[#c5c6ff] border-[4px] border-[#5a5992] rounded-[50%] p-[10px]"
-            href="http://"
+            href="https://opensea.io/collection/beingsnft"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -80,7 +91,10 @@ function Footer() {
                 fill="#2081E2"
               />
             </svg>
-          </a>
+          </motion.a>
+        </div>
+        <div className=" hidden md:block rotate-[40deg] absolute left-[-10px] top-[50px]">
+          <img src="./Beings Web Assets/scribble.svg" alt="" />
         </div>
       </div>
     </div>

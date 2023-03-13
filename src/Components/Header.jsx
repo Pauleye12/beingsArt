@@ -16,6 +16,30 @@ function Header() {
     },
   };
 
+  const rocketVariant = {
+    inView: {
+      y: [0, -10, 5, -10, 5, -100],
+      opacity:[1,1,1,1,1,0],
+      transition: {
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut",
+        delay: 0.3,
+        repeatDelay:2
+      },
+    },
+  };
+  const btnVariants = {
+    hover: {
+      scale: 1.2,
+      boxShadow: "0px 0px 8px rgba(254,254,254,0.9)",
+      transition: {
+        ease: "easeInOut",
+        duration: 0.3,
+      },
+    },
+  };
+
   const [sideBarOpen, setSideBarOpen] = useState(false);
 
   const SideBarToggle = () => setSideBarOpen((prev) => !prev);
@@ -48,14 +72,25 @@ function Header() {
             </a>
           </ul>
         </div>
-        <a
-          className=" hidden md:block academy_link font-bold px-[17px] py-[10px] rounded-3xl border-[3px] border-[#f7c5ff]"
+        <motion.a
+          className=" hidden md:block academy_link font-bold px-[17px] py-[8px] rounded-3xl border-[3px] border-[#f7c5ff]"
           href="http://"
           target="_blank"
           rel="noopener noreferrer"
+          variants={btnVariants}
+          whileHover="hover"
         >
-          Academy
-        </a>
+          <div className="flex justify-center items-center">
+            <p>Academy</p>
+            <motion.div
+              variants={rocketVariant}
+              whileInView="inView"
+              className="academy_img "
+            >
+              <img src="./Beings Web Assets/rocket.svg" alt="" />
+            </motion.div>
+          </div>
+        </motion.a>
         <div className="md:hidden" onClick={SideBarToggle}>
           <UilBars size="40" />
         </div>

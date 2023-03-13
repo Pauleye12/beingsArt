@@ -39,6 +39,17 @@ function HeroPage() {
     },
   };
 
+  const btnVariants = {
+    hover: {
+      scale: 1.2,
+      boxShadow: "0px 0px 8px rgba(254,254,254,0.8)",
+      transition: {
+        ease: "easeInOut",
+        duration: 0.3,
+      },
+    },
+  };
+
   return (
     <div className="hero_section_container flex flex-col justify-center items-center px-[30px] pb-[20px] gap-[40px] sticky top-0 z-[10] ">
       <div className="nav_bar w-full  z-[10] ">
@@ -63,7 +74,12 @@ function HeroPage() {
           animate="visible"
           className="socials flex gap-[20px] sm:gap-[30px] justify-center font-bold items-center mb-[10px]"
         >
-          <button className="flex gap-[8px] justify-center items-center social_links discord px-[20px] py-[10px] border-[2px] border-[white] rounded-[30px] ">
+          <motion.a variants={btnVariants} whileHover='hover'
+            href="https://discord.gg/JYT3AZps5k"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-[8px] justify-center items-center social_links discord px-[20px] py-[10px] border-[2px] border-[white] rounded-[30px] "
+          >
             <h1 className=" hidden sm:block font-[500] text-[16px] ">
               Discord
             </h1>
@@ -86,8 +102,13 @@ function HeroPage() {
                 </clipPath>
               </defs>
             </svg>
-          </button>
-          <button className="flex gap-[8px] justify-center items-center social_links twitter px-[20px] py-[10px] border-[2px] border-[white]  rounded-[30px] ">
+          </motion.a>
+          <motion.a variants={btnVariants} whileHover='hover'
+            href="https://twitter.com/Beings_Official"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-[8px] justify-center items-center social_links twitter px-[20px] py-[10px] border-[2px] border-[white]  rounded-[30px] "
+          >
             <h1 className=" hidden sm:block font-[500] text-[16px] ">
               Twitter
             </h1>
@@ -103,8 +124,13 @@ function HeroPage() {
                 fill="white"
               />
             </svg>
-          </button>
-          <button className="flex gap-[8px] justify-center items-center social_links opensea px-[20px] py-[10px] border-[2px] border-[white] rounded-[30px] ">
+          </motion.a>
+          <motion.a variants={btnVariants} whileHover='hover'
+            href="https://opensea.io/collection/beingsnft"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-[8px] justify-center items-center social_links opensea px-[20px] py-[10px] border-[2px] border-[white] rounded-[30px] "
+          >
             <h1 className=" hidden sm:block font-[500] text-[16px] ">
               Opensea
             </h1>
@@ -124,7 +150,7 @@ function HeroPage() {
                 fill="white"
               />
             </svg>
-          </button>
+          </motion.a>
         </motion.div>
       </div>
     </div>
