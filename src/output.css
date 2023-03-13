@@ -556,16 +556,12 @@ video {
   top: 0px;
 }
 
-.top-\[45px\] {
-  top: 45px;
+.top-\[50px\] {
+  top: 50px;
 }
 
 .top-\[70px\] {
   top: 70px;
-}
-
-.top-\[50px\] {
-  top: 50px;
 }
 
 .z-\[-100\] {
@@ -638,6 +634,35 @@ video {
   height: 100%;
 }
 
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-\[90px\] {
+  height: 90px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
 .max-h-\[410px\] {
   max-height: 410px;
 }
@@ -686,26 +711,6 @@ video {
   max-width: 900px;
 }
 
-.rotate-45 {
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[\] {
-  --tw-rotate: ;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[43\] {
-  --tw-rotate: 43;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[43deg\] {
-  --tw-rotate: 43deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .rotate-\[40deg\] {
   --tw-rotate: 40deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -751,6 +756,10 @@ video {
   gap: 25px;
 }
 
+.gap-\[300px\] {
+  gap: 300px;
+}
+
 .gap-\[30px\] {
   gap: 30px;
 }
@@ -763,20 +772,12 @@ video {
   gap: 50px;
 }
 
-.gap-\[600px\] {
-  gap: 600px;
-}
-
 .gap-\[8px\] {
   gap: 8px;
 }
 
 .gap-\[\] {
   gap: ;
-}
-
-.gap-\[300px\] {
-  gap: 300px;
 }
 
 .overflow-hidden {
